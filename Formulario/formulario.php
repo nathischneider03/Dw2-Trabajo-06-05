@@ -21,8 +21,8 @@ session_start();
  <div class="form-outline mb-4">
 <input type="date" name="fenac" id="fenac" class="form-control" data-date-format="DD/MMM/YYY"/>
 <label class="form-label" for="form4Example3">Fecha de Nacimiento</label></div>
-<button onclick="terminar() "type="submit" id="terminar" class="btn btn-primary">Enviar</button>
-<button type="submit" class="btn btn-primary">Cerrar Sesion</button>
+<button type="submit"  class="btn btn-primary">Enviar</button>
+<button onclick="terminar() "type="submit"  id="terminar" class="btn btn-primary">Cerrar Sesion</button>
   </div>
 </div>
 </form>

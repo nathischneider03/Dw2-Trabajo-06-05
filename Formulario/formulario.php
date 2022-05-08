@@ -21,8 +21,8 @@ session_start();
  <div class="form-outline mb-4">
 <input type="date" name="fenac" id="fenac" class="form-control" data-date-format="DD/MMM/YYY"/>
 <label class="form-label" for="form4Example3">Fecha de Nacimiento</label></div>
-<button type="submit" class="btn btn-primary">Enviar</button>
-<button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+<button onclick="terminar() "type="submit" id="terminar" class="btn btn-primary">Enviar</button>
+<button type="submit" class="btn btn-primary">Cerrar Sesion</button>
   </div>
 </div>
 </form>
@@ -37,6 +37,10 @@ array_push($_SESSION['personas'], $_POST['nombre']);
 
 if ($_POST['apellido']!=="") {
 array_push($_SESSION['personas'], $_POST['apellido']);
+}
+
+function terminar(){
+  session_destroy();
 }
 
 print_r($_SESSION);
